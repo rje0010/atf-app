@@ -1,0 +1,11 @@
+.navbar-colors{
+    background-color: #071635 ;
+}
+
+.navbar-btn{
+    background-color: #071635;
+    width:200px;
+    border-width: 0;
+    margin-left: 10%;
+    margin-right: 10%
+}
