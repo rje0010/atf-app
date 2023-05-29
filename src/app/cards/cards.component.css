@@ -1,14 +1,7 @@
-.card-style{
-    width: 10%;
-    height: 10%;
-    border-width: 0px;
-    margin: 1%;
-    font-family: Palatino Linotype,Georgia,Times New Roman,Times,serif;;
-}
-
 .group-style{
     text-align: center;
-    margin-left: 25%;
+    margin-left: 20%;
+    border-width: 0px;
 }
 
 .title-style{
@@ -17,7 +10,7 @@
     font-weight: bold;
     color: #005e99;
     width: 120%;
-    margin-left: -10%;
+    margin-left: 0%;
 }
 
 .title-style:hover{
