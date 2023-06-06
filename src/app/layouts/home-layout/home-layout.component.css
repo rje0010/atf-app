@@ -1,7 +1,8 @@
 .card-style{
-    width: 10%;
-    height: 10%;
+    width: 55%;
+    height: 55%;
     border-width: 0px;
-    margin: 1%;
+    margin: 5%;
+    margin-left: 20%;
     font-family: Palatino Linotype,Georgia,Times New Roman,Times,serif;;
 }

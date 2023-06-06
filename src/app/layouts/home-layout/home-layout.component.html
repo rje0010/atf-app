@@ -1,0 +1,13 @@
+<app-carousel></app-carousel>
+<app-dropdown></app-dropdown>
+
+<div class="container-fluid d-flex card-style">
+    <div *ngFor="let card of cards1">
+    <app-cards img={{card.img}} imgTitle={{card.imgTitle}} imgText={{card.imgText}}></app-cards>
+    </div>
+</div>
+<div class="container-fluid d-flex card-style">
+    <div *ngFor="let card of cards2">
+    <app-cards img={{card.img}} imgTitle={{card.imgTitle}} imgText={{card.imgText}}></app-cards>
+    </div>
+</div>
