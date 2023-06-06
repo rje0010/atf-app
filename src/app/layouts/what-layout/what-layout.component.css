@@ -1,0 +1,38 @@
+.home-style{
+    margin-left: 30%;
+    text-decoration: none;
+    color: #556280;
+}
+
+.home-style:hover{
+    text-decoration: underline;
+}
+
+.line-style{
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #071635;
+}
+
+.sidebar-style{
+    color: #556280;
+    text-decoration: none;
+    font-family: Palatino Linotype,Georgia,Times New Roman,Times,serif;
+}
+
+.sidebar-style:hover{
+ text-decoration: underline;
+}
+
+.paragraph-titles{
+    color: #005e99;
+    text-decoration: none;  
+    font-size: 1.84615em;
+    line-height: 1.05em;
+    font-family: Palatino Linotype,Georgia,Times New Roman,Times,serif;
+    font-weight: bold;
+}
+
+.paragraph-titles:hover{
+    text-decoration: underline;
+}
