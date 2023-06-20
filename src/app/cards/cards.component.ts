@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CardsService } from './cards.service';
 
 @Component({
   selector: 'app-cards',
@@ -11,14 +12,14 @@ export class CardsComponent implements OnInit {
   @Input() imgTitle: string;
   @Input() imgText: string;
 
-  constructor(){
+  constructor(private cardsService:CardsService){
     this.img="No Image Found";
     this.imgTitle="No Title Found";
     this.imgText="No Text Found"
   }
 
   ngOnInit(): void{
-  
+
   }
 
 }

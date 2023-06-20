@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { mock_list } from 'src/app/cards/mock_list';
-import { mock_list2 } from 'src/app/cards/mock_list2';
 import { CardModel } from 'src/app/cards/card.model';
+import { CardsService } from 'src/app/cards/cards.service';
 
 @Component({
   selector: 'app-home-layout',
@@ -12,16 +11,22 @@ export class HomeLayoutComponent {
   cards1: CardModel [] = [];
   cards2: CardModel [] = [];
 
-  constructor(){
+  constructor(private cardsService:CardsService){
     
-    for (var card of mock_list){
-      console.log(card);
-      this.cards1.push(card);
-    }
+    this.cardsService.getCardsOne().subscribe((data: CardModel []) => {
+      console.log("Fetching Cards...");
+      console.log(data);
+      for (var card of data){
+        this.cards1.push(card);
+      }
+    });
 
-    for (var card of mock_list2){
-      console.log(card);
-      this.cards2.push(card);
-    }
+    this.cardsService.getCardsTwo().subscribe((data: CardModel []) => {
+      console.log("Fetching Cards...");
+      console.log(data);
+      for (var card of data){
+        this.cards2.push(card);
+      }
+    });
   }
 }
