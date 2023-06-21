@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "atf-app-98c14"
+  },
+  "targets": {
+    "atf-app-98c14": {
+      "hosting": {
+        "atf-app": [
+          "atf-app-98c14"
+        ]
+      }
+    }
+  }
+}

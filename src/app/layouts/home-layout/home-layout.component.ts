@@ -13,7 +13,7 @@ export class HomeLayoutComponent {
 
   constructor(private cardsService:CardsService){
     
-    this.cardsService.getCardsOne().subscribe((data: CardModel []) => {
+    this.cardsService.cards1.subscribe((data: CardModel []) => {
       console.log("Fetching Cards...");
       console.log(data);
       for (var card of data){
@@ -21,7 +21,7 @@ export class HomeLayoutComponent {
       }
     });
 
-    this.cardsService.getCardsTwo().subscribe((data: CardModel []) => {
+    this.cardsService.cards2.subscribe((data: CardModel []) => {
       console.log("Fetching Cards...");
       console.log(data);
       for (var card of data){
