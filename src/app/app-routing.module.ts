@@ -5,6 +5,7 @@ import { AboutLayoutComponent } from './layouts/about-layout/about-layout.compon
 import { WhoLayoutComponent } from './layouts/who-layout/who-layout.component';
 import { WhatLayoutComponent } from './layouts/what-layout/what-layout.component';
 import { ResourcesLayoutComponent } from './layouts/resources-layout/resources-layout.component';
+import { AddCardComponent } from './add-card/add-card.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path:"resources",
     component: ResourcesLayoutComponent
+  },
+  {
+    path:"admin",
+    component: AddCardComponent
   },
 ];
 

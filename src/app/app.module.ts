@@ -19,6 +19,8 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AddCardComponent } from './add-card/add-card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     WhatLayoutComponent,
     ResourcesLayoutComponent,
     AboutLayoutComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    AddCardComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     AngularFireModule.initializeApp(environment.firebase, "atf-app"),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
-    provideDatabase(() => getDatabase())
+    provideDatabase(() => getDatabase()),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
