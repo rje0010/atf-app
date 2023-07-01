@@ -21,6 +21,7 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AddCardComponent } from './add-card/add-card.component';
 import { FormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FormsModule } from '@angular/forms';
     ResourcesLayoutComponent,
     AboutLayoutComponent,
     UserInfoComponent,
-    AddCardComponent
+    AddCardComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,

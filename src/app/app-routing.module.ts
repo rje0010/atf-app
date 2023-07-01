@@ -6,6 +6,7 @@ import { WhoLayoutComponent } from './layouts/who-layout/who-layout.component';
 import { WhatLayoutComponent } from './layouts/what-layout/what-layout.component';
 import { ResourcesLayoutComponent } from './layouts/resources-layout/resources-layout.component';
 import { AddCardComponent } from './add-card/add-card.component';
+import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path:"admin",
     component: AddCardComponent
+  },
+  {
+    path:"auth",
+    component: AuthComponent
   },
 ];
 
